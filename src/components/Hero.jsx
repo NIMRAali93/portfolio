@@ -46,11 +46,7 @@ export default function Hero() {
             </span>
           </h1>
           <p className="hero-copy" data-hero="copy">
-            I’m Nimra Ali, a Front-End and WordPress developer specialising in
-            React, WordPress, WooCommerce and responsive website development. I
-            build fast, user-friendly websites for businesses that want a
-            professional online presence and a better experience for their
-            customers.
+            I’m Nimra Ali, a Front-End and WordPress developer specialising in React, WordPress, WooCommerce and responsive website development. I build fast, user-friendly websites for businesses that want a professional online presence and a better experience for their customers.
           </p>
           <div className="hero-actions">
             <a ref={primaryRef} className="btn btn-primary" href="#work" data-hero="action">
