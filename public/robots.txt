@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-one-blush-12.vercel.app/sitemap.xmlnpm run build
