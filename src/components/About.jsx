@@ -7,8 +7,8 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 const skills = [
   { title: 'Frontend', copy: 'HTML, CSS, JavaScript, React' },
   { title: 'WordPress', copy: 'Custom builds, Elementor, WooCommerce' },
-  { title: 'Backend-aware', copy: 'PHP and MySQL where the project requires it' },
-  { title: 'Experience Design', copy: 'Clear structure, responsive interfaces and user-focused journeys' },
+  { title: 'Backend', copy: 'PHP, MySQL' },
+  { title: 'UI/UX', copy: 'Responsive, user-focused design' },
 ]
 
 const p = (text) => ['punct', text]
@@ -81,22 +81,17 @@ export default function About() {
         <div className="about-text">
           <p className="eyebrow" data-reveal="up">About Me</p>
           <h2 id="about-heading" className="serif" data-reveal="up">
-            Front-End &amp; WordPress Developer Focused on Thoughtful, Effective Websites
+            Front-End &amp; WordPress Developer
           </h2>
           <p className="about-copy" data-reveal="fade">
             I’m Nimra, a Front-End and WordPress developer with 4+ years of
-            experience building websites for businesses, including taxi and
-            airport transfer companies, facilities management businesses and
-            service-based organisations. I combine front-end development,
-            WordPress expertise and practical UI/UX thinking to create websites
-            that are clear, responsive and easy to use.
+            experience building modern websites for businesses, including taxi,
+            airport transfer and service-based companies. I specialise in React,
+            WordPress, WooCommerce and responsive website development.
           </p>
           <p className="about-copy" data-reveal="fade">
-            I pay attention to the details that can make a real difference to a
-            website: loading performance, mobile usability, clear navigation,
-            booking journeys, structured content and maintainable code. My goal is
-            to create websites that not only look professional but also help
-            businesses communicate their services effectively online.
+            I focus on creating websites that are fast, easy to use and designed
+            around clear customer journeys.
           </p>
 
           <div className="caps" data-stagger>

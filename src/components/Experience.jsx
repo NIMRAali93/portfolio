@@ -18,10 +18,10 @@ export default function Experience() {
   return (
     <section id="experience" className="process" ref={ref} aria-labelledby="process-heading">
       <div className="wrap">
-        <p className="eyebrow" data-reveal="up">How I work</p>
+        <p className="eyebrow" data-reveal="up">How I Work</p>
         <div className="process-heading-row">
-          <h2 id="process-heading" className="serif" data-reveal="up">A Clear Website Development Process From Idea to Launch</h2>
-          <p data-reveal="fade">Every website project starts by understanding the business and ends with a carefully tested digital experience. The process keeps communication clear while giving each stage the attention it needs.</p>
+          <h2 id="process-heading" className="serif" data-reveal="up">A Clear Website Development Process</h2>
+          <p data-reveal="fade">Every website project starts with understanding your business, goals and audience. From planning and development to testing and launch, I keep the process clear, organised and focused on creating a responsive website that works for your customers.</p>
         </div>
         <div className="process-list" data-stagger>
           {steps.map((step) => (
