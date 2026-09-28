@@ -12,7 +12,7 @@ export default function Services() {
         <div className="section-head">
           <div>
             <p className="eyebrow" data-reveal="up">What I do</p>
-            <h2 className="serif" data-reveal="up">Front-End, WordPress &amp; WooCommerce Development</h2>
+            <h2 className="serif" data-reveal="up">Professional Website Development Services</h2>
           </div>
           <p className="section-intro" data-reveal="fade">
             I create modern, responsive websites that combine thoughtful design, clean
