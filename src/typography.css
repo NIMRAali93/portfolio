@@ -1,0 +1,79 @@
+/* =========================================================
+   Body typography: Inter
+   Headings keep the original Fraunces serif (see index.css).
+   Imported AFTER index.css (see main.jsx) so it overrides it.
+   Fonts are loaded in index.html.
+   ========================================================= */
+
+:root {
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --text-main: #23252b;
+  --text-muted: #6b6f76;
+
+  /* Existing body token used across index.css now points at Inter */
+  --sans: var(--font-body);
+}
+
+/* ---------- Body text ---------- */
+body {
+  font-family: var(--font-body);
+  color: var(--text-main);
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  font-size: 1.05rem;      /* ~17px */
+  line-height: 1.75;
+}
+
+/* Hero intro text */
+.hero-copy {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 520px;
+}
+
+/* ---------- Section labels: pill style ---------- */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+  background: rgba(15, 74, 58, 0.08);
+  padding: 0.4rem 0.9rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+.eyebrow::before {
+  display: none;
+}
+
+/* Pill on dark green sections */
+.why .eyebrow,
+.contact .eyebrow {
+  background: rgba(255, 252, 246, 0.1);
+}
+
+/* ---------- Buttons & nav ---------- */
+.btn,
+nav a {
+  font-weight: 500;
+}
+
+/* ---------- Small text in cards ---------- */
+/* Kept at 1rem (16px) to meet the minimum body size */
+[class*="card"] p {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 575.98px) {
+  p { font-size: 1rem; }
+}

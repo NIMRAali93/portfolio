@@ -1,0 +1,82 @@
+import { useEffect, useRef } from 'react'
+import { initHero } from '../animations/heroAnimations'
+import { useParallax } from '../hooks/useParallax'
+import { useMagnetic } from '../hooks/useMagnetic'
+import portrait from '../assets/my image.png'
+
+export default function Hero() {
+  const rootRef = useRef(null)
+  const primaryRef = useRef(null)
+  const ghostRef = useRef(null)
+  const layers = [
+    { selector: '[data-hero="bg"]', y: 40 },
+    { selector: '[data-hero="sage"]', y: 70 },
+    { selector: '.hero-sage-b', y: 90 },
+    { selector: '[data-hero="peach"]', y: -35, x: 18 },
+    { selector: '[data-hero="portrait"]', y: 28 },
+    { selector: '[data-hero="label"]', y: -22 },
+  ]
+
+  useParallax(rootRef, layers)
+  useMagnetic(primaryRef, 0.18)
+  useMagnetic(ghostRef, 0.14)
+
+  useEffect(() => {
+    return initHero(rootRef.current)
+  }, [])
+
+  return (
+    <section id="hero" className="hero" ref={rootRef} aria-label="Introduction">
+      <div className="hero-bg" data-hero="bg" />
+      <div className="blob blob-sage hero-continue" data-hero="sage" aria-hidden="true" />
+      <div className="wrap hero-grid">
+        <div>
+          <p className="eyebrow" data-hero="eyebrow">
+            Nimra Ali · Frontend & WordPress Developer
+          </p>
+          <h1 className="serif">
+            <span className="line">
+              <span data-hero="line">I Build Websites</span>
+            </span>
+            <span className="line">
+              <span data-hero="line">That Drive Real</span>
+            </span>
+            <span className="line">
+              <span className="line-accent" data-hero="line">Business Results.</span>
+            </span>
+          </h1>
+          <p className="hero-copy" data-hero="copy">
+            I’m a Front-End and WordPress developer focused on creating modern,
+            responsive and user-friendly digital experiences using WordPress,
+            WooCommerce, JavaScript and React.
+          </p>
+          <div className="hero-actions">
+            <a ref={primaryRef} className="btn btn-primary" href="#work" data-hero="action">
+              View My Work <span className="arrow" aria-hidden="true">→</span>
+            </a>
+            <a ref={ghostRef} className="btn btn-ghost" href="#contact" data-hero="action">
+              Let’s Work Together <span className="arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+          <p className="hero-status" data-hero="action">
+            <span className="status-dot" aria-hidden="true" />
+            Available for new projects
+          </p>
+        </div>
+
+        <div className="hero-stage">
+          <div className="blob blob-sage hero-sage-a" data-hero="sage" aria-hidden="true" />
+          <div className="blob blob-sage hero-sage-b" data-hero="sage" aria-hidden="true" />
+          <div className="blob blob-peach hero-peach-a" data-hero="peach" aria-hidden="true" />
+          <div className="blob blob-peach hero-peach-b" data-hero="peach" aria-hidden="true" />
+          <figure className="hero-portrait" data-hero="portrait">
+            <img src={portrait} alt="Nimra Ali" />
+          </figure>
+          <span className="float-label float-a" data-hero="label">React</span>
+          <span className="float-label float-b" data-hero="label">WordPress</span>
+          <span className="float-label float-c" data-hero="label">WooCommerce</span>
+        </div>
+      </div>
+    </section>
+  )
+}
