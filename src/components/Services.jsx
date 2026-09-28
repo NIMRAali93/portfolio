@@ -12,11 +12,13 @@ export default function Services() {
         <div className="section-head">
           <div>
             <p className="eyebrow" data-reveal="up">What I do</p>
-            <h2 className="serif" data-reveal="up">Crafted for the way people actually use a website.</h2>
+            <h2 className="serif" data-reveal="up">Front-End, WordPress &amp; WooCommerce Development</h2>
           </div>
           <p className="section-intro" data-reveal="fade">
-            From WordPress builds to React interfaces, the work is always the same at heart:
-            make it clear, make it responsive, and make it feel considered.
+            I create modern, responsive websites that combine thoughtful design, clean
+            development and a clear user experience. From custom WordPress websites to React
+            interfaces and WooCommerce stores, every project is built around the needs of the
+            business and its customers.
           </p>
         </div>
         <div className="service-list" data-stagger>

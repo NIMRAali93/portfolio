@@ -13,10 +13,10 @@ export default function Projects() {
         <div className="work-head">
           <div>
             <p className="eyebrow" data-reveal="up">Selected work · 01—05</p>
-            <h2 className="serif" data-reveal="up">Digital experiences made clear.</h2>
+            <h2 className="serif" data-reveal="up">Websites &amp; Digital Experiences Built for Businesses</h2>
           </div>
           <p className="work-intro" data-reveal="fade">
-            Recent websites for service businesses, with considered design and straightforward customer journeys.
+            A selection of websites I’ve designed and developed for businesses across different industries, including airport transfers, taxi services, security and facilities management.
           </p>
         </div>
         <div className="project-grid">

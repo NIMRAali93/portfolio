@@ -56,9 +56,11 @@ export default function Contact() {
       <div className="wrap contact-inner">
         <div>
           <p className="eyebrow" style={{ color: '#b8cdbd' }}>Contact</p>
-          <h2 className="serif" data-contact="heading">Have a Project in Mind?</h2>
+          <h2 className="serif" data-contact="heading">Have a Website Project in Mind?</h2>
           <p className="contact-lead" data-contact="copy">
-            Let’s build something meaningful together.
+            Whether you need a new WordPress website, a responsive React interface,
+            a WooCommerce store or improvements to an existing website, I’d be happy
+            to discuss your project.
           </p>
           <div className="contact-details">
             <p className="contact-label">Email me directly</p>
@@ -73,7 +75,7 @@ export default function Contact() {
             </a>
             <p className="contact-reply">
               <span className="status-dot" aria-hidden="true" />
-              I usually reply within 24 hours
+              I usually reply within 24 hours.
             </p>
           </div>
         </div>

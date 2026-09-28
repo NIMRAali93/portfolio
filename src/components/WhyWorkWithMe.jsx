@@ -78,12 +78,13 @@ export default function WhyWorkWithMe() {
           <div>
             <p className="eyebrow" data-reveal="up">Working together</p>
             <h2 id="why-heading" className="serif" data-reveal="up">
-              What you can expect when we <em>work together</em>.
+              A Direct, Reliable Approach to Website Development
             </h2>
           </div>
           <p className="why-lead" data-reveal="fade">
-            No agency layers and no guesswork. You work directly with the person
-            designing and building your website, from the first message to launch day.
+            You work directly with the person designing and developing your website.
+            From the first conversation to launch and post-launch support, the process
+            stays clear, personal and straightforward.
           </p>
         </div>
 

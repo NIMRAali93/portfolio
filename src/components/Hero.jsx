@@ -32,23 +32,25 @@ export default function Hero() {
       <div className="wrap hero-grid">
         <div>
           <p className="eyebrow" data-hero="eyebrow">
-            Nimra Ali · Frontend & WordPress Developer
+            Nimra Ali · Front-End & WordPress Developer
           </p>
           <h1 className="serif">
             <span className="line">
-              <span data-hero="line">I Build Websites</span>
+              <span data-hero="line">I Build Modern</span>
             </span>
             <span className="line">
-              <span data-hero="line">That Drive Real</span>
+              <span data-hero="line">Websites With</span>
             </span>
             <span className="line">
-              <span className="line-accent" data-hero="line">Business Results.</span>
+              <span className="line-accent" data-hero="line">React &amp; WordPress.</span>
             </span>
           </h1>
           <p className="hero-copy" data-hero="copy">
-            I’m a Front-End and WordPress developer focused on creating modern,
-            responsive and user-friendly digital experiences using WordPress,
-            WooCommerce, JavaScript and React.
+            I’m Nimra Ali, a Front-End and WordPress developer specialising in
+            React, WordPress, WooCommerce and responsive website development. I
+            build fast, user-friendly websites for businesses that want a
+            professional online presence and a better experience for their
+            customers.
           </p>
           <div className="hero-actions">
             <a ref={primaryRef} className="btn btn-primary" href="#work" data-hero="action">

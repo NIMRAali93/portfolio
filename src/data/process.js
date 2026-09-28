@@ -3,25 +3,25 @@ const process = [
     number: '01',
     title: 'Discover',
     icon: 'compass',
-    copy: 'Understand your service, audience and goals before shaping the right direction.',
+    copy: 'I learn about your business, audience, services and goals before deciding on the right website direction.',
   },
   {
     number: '02',
     title: 'Plan',
     icon: 'ruler',
-    copy: 'Map the pages, content and interactions so the experience feels clear from the start.',
+    copy: 'I structure the pages, content, navigation and key interactions so visitors can understand the website easily.',
   },
   {
     number: '03',
     title: 'Build',
     icon: 'code',
-    copy: 'Turn the direction into clean, responsive WordPress or frontend code that is easy to use.',
+    copy: 'I turn the plan into clean, responsive WordPress or front-end development with a focus on usability and performance.',
   },
   {
     number: '04',
     title: 'Refine',
     icon: 'sparkles',
-    copy: 'Polish the details, test the experience and make sure the finished site feels considered.',
+    copy: 'I test the website across screen sizes, review the details, fix issues and polish the final experience before launch.',
   },
 ]
 

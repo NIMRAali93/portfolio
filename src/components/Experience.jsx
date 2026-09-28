@@ -20,8 +20,8 @@ export default function Experience() {
       <div className="wrap">
         <p className="eyebrow" data-reveal="up">How I work</p>
         <div className="process-heading-row">
-          <h2 id="process-heading" className="serif" data-reveal="up">A thoughtful process from first idea to final detail.</h2>
-          <p data-reveal="fade">Every project gets room to be understood, shaped and polished before it goes out into the world.</p>
+          <h2 id="process-heading" className="serif" data-reveal="up">A Clear Website Development Process From Idea to Launch</h2>
+          <p data-reveal="fade">Every website project starts by understanding the business and ends with a carefully tested digital experience. The process keeps communication clear while giving each stage the attention it needs.</p>
         </div>
         <div className="process-list" data-stagger>
           {steps.map((step) => (
