@@ -482,14 +482,15 @@ p {
 }
 
 .hero h1 {
-  font-size: clamp(2.7rem, 6.4vw, 5.6rem);
-  margin: 0.85rem 0 0.4rem;
+  font-size: clamp(2.4rem, 4.4vw, 4.4rem);
+  margin: 0.85rem 0 1.2rem;
 }
 
 .hero h1 .line-accent {
   position: relative;
   display: inline-block;
   color: #d96332;
+  white-space: nowrap;
 }
 
 .hero h1 .line-accent::after {
@@ -531,17 +532,9 @@ p {
   gap: 0.75rem;
 }
 
-.hero-status {
-  display: inline-flex;
-  align-items: center;
+.hero-available {
   gap: 0.6rem;
-  margin-top: 1.4rem;
-  padding: 0.45rem 0.95rem 0.45rem 0.75rem;
-  background: rgba(255, 252, 246, 0.75);
-  border: 1px solid rgba(15, 91, 77, 0.16);
-  border-radius: 999px;
   color: var(--green-deep);
-  font-size: 0.9rem;
   font-weight: 500;
 }
 
@@ -623,7 +616,7 @@ p {
 
 .hero-stage {
   position: relative;
-  min-height: 420px;
+  height: clamp(440px, 68vh, 620px);
 }
 
 .blob {
@@ -649,26 +642,11 @@ p {
   height: 68%;
 }
 
-.hero-sage-b {
-  bottom: 8%;
-  left: -6%;
-  width: 34%;
-  height: 32%;
-  opacity: 0.55;
-}
-
 .hero-peach-a {
   top: -2%;
   right: 6%;
   width: 28%;
   height: 26%;
-}
-
-.hero-peach-b {
-  top: 18%;
-  left: 8%;
-  width: 18%;
-  height: 16%;
 }
 
 .hero-portrait {
@@ -694,20 +672,31 @@ p {
 .float-label {
   position: absolute;
   z-index: 3;
-  padding: 0.45rem 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem 0.55rem 0.7rem;
   color: var(--green-deep);
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: 999px;
-  box-shadow: 0 10px 30px rgba(8, 63, 53, 0.08);
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  box-shadow: 0 12px 32px rgba(8, 63, 53, 0.1);
+  font-size: 0.88rem;
+  font-weight: 600;
 }
 
-.float-a { top: 22%; left: -4%; }
-.float-b { top: 46%; right: -2%; }
-.float-c { bottom: 10%; left: 8%; }
+.float-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.icon-react { color: #149eca; }
+.icon-wordpress { color: #21759b; }
+.icon-woo { color: #7f54b3; }
+
+.float-a { top: 20%; left: 2%; }
+.float-b { top: 48%; right: 0; }
+.float-c { bottom: 12%; left: 4%; }
 
 .hero-continue {
   position: absolute;
@@ -2383,7 +2372,7 @@ p {
   }
 
   .hero-stage {
-    min-height: 360px;
+    height: 480px;
   }
 
   .capability-strip {
@@ -2505,8 +2494,14 @@ p {
   }
 
   .float-label {
-    font-size: 0.68rem;
-    padding: 0.35rem 0.55rem;
+    gap: 0.4rem;
+    font-size: 0.78rem;
+    padding: 0.4rem 0.75rem 0.4rem 0.55rem;
+  }
+
+  .float-icon {
+    width: 1rem;
+    height: 1rem;
   }
 
   .service-item {
@@ -2579,7 +2574,7 @@ p {
 
 
   .hero-stage {
-    min-height: min(94vw, 390px);
+    height: min(100vw, 420px);
   }
 
   .nav::before {
@@ -2612,7 +2607,7 @@ p {
   }
 
   .hero h1 {
-    font-size: 2.35rem;
+    font-size: 2.15rem;
   }
 }
 

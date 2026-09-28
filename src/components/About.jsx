@@ -4,13 +4,6 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons'
 import { useParallax } from '../hooks/useParallax'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
-const skills = [
-  { title: 'Frontend', copy: 'HTML, CSS, JavaScript, React' },
-  { title: 'WordPress', copy: 'Custom builds, Elementor, WooCommerce' },
-  { title: 'Backend', copy: 'PHP, MySQL' },
-  { title: 'UI/UX', copy: 'Responsive, user-focused design' },
-]
-
 const p = (text) => ['punct', text]
 const str = (text) => ['str', `'${text}'`]
 const list = (...items) => [
@@ -94,17 +87,8 @@ export default function About() {
             around clear customer journeys.
           </p>
 
-          <div className="caps" data-stagger>
-            {skills.map((skill) => (
-              <div className="cap" data-stagger-item key={skill.title}>
-                <strong>{skill.title}</strong>
-                <span>{skill.copy}</span>
-              </div>
-            ))}
-          </div>
-
           <div className="about-actions" data-reveal="fade">
-            <a className="btn btn-primary" href="/Nimra-Ali-CV.pdf" download="Nimra-Ali-CV.pdf">
+            <a className="btn btn-primary" href="/Nimra_Ali_CV_.pdf" download="Nimra-Ali-CV.pdf">
               <FontAwesomeIcon icon={faDownload} aria-hidden="true" />
               Download CV
             </a>

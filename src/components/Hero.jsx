@@ -2,6 +2,9 @@ import { useEffect, useRef } from 'react'
 import { initHero } from '../animations/heroAnimations'
 import { useParallax } from '../hooks/useParallax'
 import { useMagnetic } from '../hooks/useMagnetic'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faReact, faWordpress } from '@fortawesome/free-brands-svg-icons'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import portrait from '../assets/my image.png'
 
 export default function Hero() {
@@ -11,7 +14,6 @@ export default function Hero() {
   const layers = [
     { selector: '[data-hero="bg"]', y: 40 },
     { selector: '[data-hero="sage"]', y: 70 },
-    { selector: '.hero-sage-b', y: 90 },
     { selector: '[data-hero="peach"]', y: -35, x: 18 },
     { selector: '[data-hero="portrait"]', y: 28 },
     { selector: '[data-hero="label"]', y: -22 },
@@ -52,27 +54,31 @@ export default function Hero() {
             <a ref={primaryRef} className="btn btn-primary" href="#work" data-hero="action">
               View My Work <span className="arrow" aria-hidden="true">→</span>
             </a>
-            <a ref={ghostRef} className="btn btn-ghost" href="#contact" data-hero="action">
-              Let’s Work Together <span className="arrow" aria-hidden="true">→</span>
+            <a ref={ghostRef} className="btn btn-ghost hero-available" href="#contact" data-hero="action">
+              <span className="status-dot" aria-hidden="true" />
+              Available for new projects
             </a>
           </div>
-          <p className="hero-status" data-hero="action">
-            <span className="status-dot" aria-hidden="true" />
-            Available for new projects
-          </p>
         </div>
 
         <div className="hero-stage">
           <div className="blob blob-sage hero-sage-a" data-hero="sage" aria-hidden="true" />
-          <div className="blob blob-sage hero-sage-b" data-hero="sage" aria-hidden="true" />
           <div className="blob blob-peach hero-peach-a" data-hero="peach" aria-hidden="true" />
-          <div className="blob blob-peach hero-peach-b" data-hero="peach" aria-hidden="true" />
           <figure className="hero-portrait" data-hero="portrait">
             <img src={portrait} alt="Nimra Ali" />
           </figure>
-          <span className="float-label float-a" data-hero="label">React</span>
-          <span className="float-label float-b" data-hero="label">WordPress</span>
-          <span className="float-label float-c" data-hero="label">WooCommerce</span>
+          <span className="float-label float-a" data-hero="label">
+            <FontAwesomeIcon icon={faReact} className="float-icon icon-react" aria-hidden="true" />
+            React
+          </span>
+          <span className="float-label float-b" data-hero="label">
+            <FontAwesomeIcon icon={faWordpress} className="float-icon icon-wordpress" aria-hidden="true" />
+            WordPress
+          </span>
+          <span className="float-label float-c" data-hero="label">
+            <FontAwesomeIcon icon={faCartShopping} className="float-icon icon-woo" aria-hidden="true" />
+            WooCommerce
+          </span>
         </div>
       </div>
     </section>
