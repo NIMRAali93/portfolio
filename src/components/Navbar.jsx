@@ -49,16 +49,6 @@ export default function Navbar() {
           </nav>
 
           <div className="nav-actions">
-            <a
-              className="nav-phone"
-              href="https://wa.me/923257676105?text=Hello%20Nimra%2C%20I%20want%20to%20talk%20about%20a%20project."
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Contact on WhatsApp"
-            >
-              <span className="phone-icon" aria-hidden="true">✆</span>
-              <span>0325 7676105</span>
-            </a>
             <a className="btn btn-primary nav-cta" href="#contact" onClick={close}>
               Start a Project
             </a>
